@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500;1,700&family=Poppins:wght@200;300;400;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img.jpg);
+ }
+ .container
+ {
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 60vh;
+    width: 60vh;
+    background-color: rgba(255, 255, 255, 0.493);
+    margin-top: 7rem;
+    line-height: 2.2rem;
+    backdrop-filter: blur(10px);
+ }
+ h1
+ {
+    margin: 2rem 0 3rem 6rem;
+    max-width: 600px;
+    border-radius: 15px;
+ }
+ input
+ {
+    width: 17rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(6, 145, 145);
+    outline: none;
+    font-size: 1.2rem;
+    height: 2rem;
+}
+button
+{
+    width: 60px;
+    background-color: rgb(4, 29, 29);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 2px;
+    font-size: 19px;
+    height: 3.14rem;
+}
+ul li
+{
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding: 10px 6px 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before
+{
+    content: "☐";
+    font-size: 25px;
+    position: absolute;
+    left: -1px;
+    top: 0.6rem;
+}
+
+#task-list 
+{
+    padding: 0px 30px;
+}
+
+ul li.checked
+{
+    text-decoration: line-through;
+    color: rgb(4, 29, 29);
+}
+
+ul li.checked::before 
+{
+    content: "☑";
+    color: rgb(4, 29, 29);
+}
+.trash
+{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 51%, 75% 100%, 0% 100%);
+}
